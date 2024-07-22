@@ -1,5 +1,7 @@
 import React from "react";
-import './index.css';
+import './page.css';
+import WebsiteHeader from "@/components/Layout/Website/WebsiteHeader/WebsiteHeader";
+import WebsiteFooter from "@/components/Layout/Website/WebsiteFooter/WebsiteFooter";
 
 interface Props {
 
@@ -8,24 +10,7 @@ interface Props {
 export default async function Page(props: Props) {
     return (
         <div className="app">
-            <head>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-                <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
-                    rel="stylesheet" />
-                <title>Yobaa</title>
-            </head>
-            <header className="header">
-                <img src="/assets/svg/yoba-logo.svg" className="app-logo" alt="logo" />
-                <div className='links'>
-                    <a><div>Home</div></a>
-                    <a><div>Company</div></a>
-                    <a><div>Contact Us</div></a>
-                </div>
-
-                <button>Download App</button>
-
-            </header>
+            <WebsiteHeader />
 
             <div className='intro'>
                 <h1>
@@ -36,8 +21,19 @@ export default async function Page(props: Props) {
                 </h1>
                 <p>Click, Pay, Explore. It's that Easy. Go global with Yobaa.</p>
                 <div className='store-links'>
-                    <img src="./appstore-download.png" />
-                    <img src="./playstore-download.png" style={{ marginLeft: 10 }} />
+                    <img src="/assets/img/appstore-download.png" />
+                    <img src="/assets/img/playstore-download.png" style={{ marginLeft: 10 }} />
+                </div>
+                <div
+                    className="row images-container" >
+                    <div className="left-image-container">
+                        <img src='/assets/img/students.png'
+                            className="left-image" />
+                    </div>
+                    <div className="right-image-container">
+                        <img src='/assets/img/student.png'
+                            className="right-image" />
+                    </div>
                 </div>
             </div>
             <div className='functions-container'>
@@ -69,7 +65,7 @@ export default async function Page(props: Props) {
                 <p>Click, Pay, Explore. It's that Easy. Go global with Yobaa.</p>
                 <div className='how-it-works-inner-container'>
                     <div className='phone-image-container'>
-                        <img src='./iphone-yoba.png' className='iphone-image' />
+                        <img src='/assets/img/iphone-yoba.png' className='iphone-image' />
                     </div>
                     <div className='instructions-list'>
                         <div>
@@ -108,8 +104,8 @@ export default async function Page(props: Props) {
                             </div>
                         </div>
                         <div className='how-it-works-store-links'>
-                            <img src="./appstore-download.png" />
-                            <img src="./playstore-download.png" style={{ marginLeft: 10 }} />
+                            <img src="/assets/img/appstore-download.png" />
+                            <img src="/assets/img/playstore-download.png" style={{ marginLeft: 10 }} />
                         </div>
                     </div>
                 </div>
@@ -175,34 +171,7 @@ export default async function Page(props: Props) {
                     <p>Can’t find the answer you’re looking for? Please send a message to our friendly team help@yooba.ai</p>
                 </div>
             </div>
-            <div className='footer'>
-                <div className='footer-stack-wrapper'>
-                    <div className='stack-card pink-bg margin-t-20 i-1'>
-                        <h2>
-                            Join Yobaa Today
-                        </h2>
-                        <p>Experience the freedom of borderless spending. Claim your free card and unlock a world of possibilities.</p>
-                        <div className='join-store-links'>
-                            <img src="./appstore-download.png" />
-                            <img src="./playstore-download.png" style={{ marginLeft: 10 }} />
-                        </div>
-                    </div>
-                    <div className='stack-card yellow-bg margin-t-20 i-2' />
-                    <div className='stack-card purple-bg2 margin-t-20 i-3' />
-                    <div className='stack-card orange-bg margin-t-20 i-4' />
-                </div>
-
-                <div className='footer-bottom'>
-                    <img src="/assets/svg/yoba-logo.svg" className="app-logo-footer" alt="logo" />
-                    <div className='footer-text'>© 2024 Yooba Plc. All Rights Reserved</div>
-                    <div className='row'>
-                        <img src="/yoba-instagram.png" className="social-link" alt="social" />
-                        <img src="/yoba-linkedin.png" className="social-link" alt="social" />
-                        <img src="/yoba-youtube.png" className="social-link" alt="social" />
-                        <img src="/yoba-twitter.png" className="social-link" alt="social" />
-                    </div>
-                </div>
-            </div>
+            <WebsiteFooter />
         </div>
     );
 }

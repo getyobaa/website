@@ -3,13 +3,6 @@
   color: white;
   overflow: hidden;
 }
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10px 0px 10px;
-}
 
 .app-logo {
   width: 159px;
@@ -25,19 +18,11 @@
   margin-right: 24px;
 }
 
-header button {
-  background-color: #6DE96D;
-  padding: 18px 31px 18px 31px;
-  border: none;
-  border-radius: 10px;
-  font-family: "Archivo", 'sans-serif';
-}
-
 .intro {
-  margin-top: 100px;
+  margin-top: 30px;
   text-align: center;
-  padding-bottom: 30vh;
   font-family: "ClashDisplay-Medium", sans-serif;
+  overflow: hidden;
 }
 .intro h1 {
   font-size: 70px;
@@ -431,21 +416,14 @@ header button {
 
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 10px;
-}
 
-
+/* 
 .stack-card {
   height: 216px;
   width: 60%;
   border-radius: 23px;
   padding: 30px 34px;
-}
+} */
 
 .pink-bg{
   background-color: #C935D2;
@@ -465,77 +443,50 @@ header button {
 .margin-t-20 {
   margin-top: 20px;
 }
-
-.footer h2 {
-  font-size: 40px;
-  text-align: center;
-  font-family: "ClashDisplay-Medium", 'sans-serif';
-}
-
-.footer p {
-  font-size: 16px;
-  margin-top: -20px;
-  text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  font-family: "Archivo", 'sans-serif';
-}
-
-.join-store-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.join-store-links img {
-  height: 45px;
-}
-.i-1 {
-  z-index: 4;
-}
-.i-2 {
-  position: absolute;
-  z-index: 3;
-  transform: translateY(20px);
-  width: 55%;
-}
-.i-3 {
-  position: absolute;
-  z-index: 2;
-  transform: translateY(40px);
-  width: 50%;
-}
-.i-4 {
-  position: absolute;
-  z-index: 1;
-  transform: translateY(60px);
-  width: 45%;
-}
-
-.footer-stack-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-bottom {
-  margin-top: 200px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.app-logo-footer {
-  width: 250px;
-}
-
 .social-link {
   margin-right: 10px;
+}
+
+.images-container {
+  justify-content: space-evenly;
+}
+
+.right-image {
+  width: 100%;
+  object-fit: cover;
+  overflow: visible;
+}
+
+.left-image {
+  width: 100%;
+  object-fit: cover;
+  overflow: visible;
+}
+
+.left-image-container {
+  height: 535px;
+  width: 50%;
+  display: flex;
+  overflow: visible;
+  align-self: flex-end;
+}
+
+.right-image-container {
+  height: 428px;
+  width: 40%;
+  display: flex;
+  overflow: visible;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 1300px) {
+  .left-image-container {
+    display: none;
+  }
+
+  .images-container {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -549,15 +500,9 @@ header button {
     width: 100px;
   }
 
-  header button {
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
-    font-size: 12px;
-  }
-
   .intro {
     margin-top: 100px;
-    padding-bottom: 25vh;
+    /* padding-bottom: 25vh; */
   }
   .intro h1 {
     font-size: 50px;
@@ -610,16 +555,6 @@ header button {
   padding: 10px 15px;
 }
 
-  .footer h2 {
-    font-size: 28px;
-  }
-  
-  .footer p {
-    font-size: 14px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   .join-store-links img {
     height: 30px;
   }
@@ -629,9 +564,7 @@ header button {
   .social-link {
     margin-right: 5px;
   }
-  .footer-text {
-    font-size: 10px;
-  }
+ 
   .phone-image-container {
     display: none;
   }
@@ -685,10 +618,6 @@ header button {
     margin-top: 30px;
   }
 
-  .app-logo-footer {
-    width: 140px;
-  }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -705,9 +634,7 @@ header button {
   .app-logo-footer {
     display: none;
   }
-  .footer-bottom {
-    padding-left: 5px;
-  }
+
   .functions-container .yoba-box-text {
     font-size: 12px;
   }
@@ -718,17 +645,6 @@ header button {
   .stack-card {
     height: 200px;
     padding: 10px 15px;
-  }
-
-  .footer h2 {
-    font-size: 24px;
-  }
-  
-  .footer p {
-    font-size: 12px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 1px;
   }
 
   .join-store-links img {
@@ -783,9 +699,6 @@ header button {
     line-height: 22px;
   }
 
-  header button {
-    font-size: 10px;
-  }
 
   .chatbox p {
     font-size: 12px;
@@ -800,7 +713,6 @@ header button {
   }
   .intro {
     margin-top: 100px;
-    padding-bottom: 25vh;
   }
   .intro h1 {
     font-size: 30px;
