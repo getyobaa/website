@@ -43,13 +43,16 @@ export default async function Page(props: Props) {
                 <p>Click, Pay, Explore. It's that Easy. Go global with Yobaa.</p>
                 <div className='yoba-box-container'>
                     <div className='yoba-box1'>
+                        <img src='/assets/img/yoba-stacked-cards.png' className="stacked-images" />
                         <p className='yoba-box-text'>Shop globally from anywhere, access international brands and subscriptions easily</p>
                     </div>
                     <div className='yoba-box2'>
+                        <img src='/assets/img/payment-link-sent.png' className="payment-link-image" />
                         <p className='yoba-box-text'>Control your card, track spending, and manage funds on the go</p>
                     </div>
                     <div className='yoba-inner-box-container'>
                         <div className='yoba-box3'>
+                            <img src='/assets/img/round-zero-percent.png' className="zero-image" />
                             <p className='yoba-box-text'>Zero conversion or maintenance fees</p>
                         </div>
                         <div className='yoba-box4'>

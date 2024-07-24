@@ -86,8 +86,8 @@
   background-color: #FFD396;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 0px 5px 10px 5px;
+  justify-content: space-evenly;
+  padding: 15px;
 }
 
 .yoba-box2 {
@@ -97,10 +97,10 @@
   border: 1px #981DFB solid;
   background-color: #CA8CFD;
   margin-left: 10px;
-  padding: 0px 5px 10px 5px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
 
 .yoba-box3 {
@@ -109,10 +109,22 @@
   border-radius: 20px;
   border: 1px #FC36E8 solid;
   background-color:  #FD8CF2;
-  padding: 0px 5px 10px 5px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+}
+
+.yoba-box3 .zero-image {
+  width: 35%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.yoba-box3 .yoba-box-text {
+  width: 70%;
+  text-align: center;
+  align-self: center;
 }
 
 .yoba-box4 {
@@ -171,10 +183,12 @@
 }
 
 .phone-image-container {
-  width: 55vw;
+  /* width: 55vw; */
   /* aspect-ratio: 1; */
-  height: 55vw; 
+  /* height: 55vw;  */
    /* 498px; */
+   height: 498px;
+   width: 594px;
   background-color: white;
   border-radius: 10px;
   border: 1px #C47BF5 solid;
@@ -585,7 +599,7 @@
     margin-top: -15px;
   }
 }
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 1500px) {
   .yoba-box1 {
     height: 30vw;
     width: 30vw;
@@ -610,6 +624,8 @@
     width: 25vw;
     padding: 0px 5px 5px 5px;
   }
+}
+@media screen and (max-width: 885px) {
   .functions-container .yoba-box-text {
     font-size: 14px;
   }
@@ -797,3 +813,59 @@
     font-size: 14px;
   }
 } 
+
+@media screen and (max-width: 800px) {
+  .yoba-box-container {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .yoba-box1 {
+    height: 40vh;
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+  }
+
+  .yoba-box2 {
+    height: 35vh;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 0px;
+  }
+
+  .stacked-images {
+    width: 90%;
+    align-self: center;
+  }
+
+  .payment-link-image {
+    height: 70%;
+    /* width: 90%; */
+    align-self: center;
+    object-fit: contain;
+  }
+
+  .yoba-box3 {
+    height: 15vh;
+    width: 46%;
+  }
+
+
+  .yoba-box4 {
+    height: 15vh;
+    width: 46%;
+    /* margin-left: 10px; */
+    /* justify-content: space-evenly; */
+  } 
+  .yoba-inner-box-container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .yoba-box-container .yoba-box-text {
+    font-size: 1em;
+  }
+}
