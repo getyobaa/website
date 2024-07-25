@@ -127,23 +127,30 @@ export default async function Page(props: Props) {
                         <p className='chat-name'>Bola</p>
                         <p>Fashion Enthusiast</p>
                     </div>
+                    <div className='chatbox second-blue-bg'>
+                        <p>As a fashion designer selling online, managing customer payments was a constant hassle. Yobaa changed everything! Now, with payment links, I can easily receive payments from clients. Yobaa has truly empowered my business to grow.</p>
+                        <div className='chat-line'></div>
+                        <p className='chat-name'>Adeola</p>
+                        <p>Fashion Designer</p>
+                    </div>
                     <div className='chatbox deep-blue-bg'>
-                        <p>Shopping from international brands was always a luxury I couldn't afford. Yobaa changed that! No more hidden fees or conversion headaches. Now I can indulge in my fashion passion without breaking the bank</p>
+                        <p>Running a small business in Nigeria often requires quick and secure online transactions. Yobaa has become an essential tool for my business. I use virtual cards for various online purchases, from software subscriptions to marketing tools.</p>
                         <div className='chat-line'></div>
-                        <p className='chat-name'>Bola</p>
-                        <p>Fashion Enthusiast</p>
+                        <p className='chat-name'>Emeka</p>
+                        <p>Business Owner</p>
                     </div>
-                    <div className='chatbox light-blue-bg'>
-                        <p>Shopping from international brands was always a luxury I couldn't afford. Yobaa changed that! No more hidden fees or conversion headaches. Now I can indulge in my fashion passion without breaking the bank</p>
+                    <div className='chatbox second-purple-bg'>
+                        <p>I'm always on the lookout for ways to save money and maximize value. Yobaa's virtual cards have helped me do just that! They allow me to take advantage of online discounts and promotions without worrying about hidden fees.</p>
                         <div className='chat-line'></div>
-                        <p className='chat-name'>Bola</p>
-                        <p>Fashion Enthusiast</p>
+                        <p className='chat-name'>Emeka</p>
+                        <p>Business Owner</p>
                     </div>
-                    <div className='chatbox light-blue-bg'>
-                        <p>Shopping from international brands was always a luxury I couldn't afford. Yobaa changed that! No more hidden fees or conversion headaches. Now I can indulge in my fashion passion without breaking the bank</p>
+                    
+                    <div className='chatbox pink-bg' style={{marginRight: 50}}>
+                        <p>As a freelancer, receiving payments from international clients was a nightmare. Traditional money transfer services were expensive and slow. Yobaa's payment links are a godsend! They allow me to get paid quickly and securely.</p>
                         <div className='chat-line'></div>
-                        <p className='chat-name'>Bola</p>
-                        <p>Fashion Enthusiast</p>
+                        <p className='chat-name'>Felix</p>
+                        <p>Business Owner</p>
                     </div>
                 </div>
                 <img src="/assets/svg/yoba-logo.svg" className="app-logo-large-happy-users" alt="logo" />

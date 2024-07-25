@@ -118,8 +118,14 @@
 }
 
 @media screen and (max-width: 500px) {
+  .footer{
+    padding-bottom: 150px;
+    background-color: #0B102D;
+
+  }
   .footerBottom {
     padding-left: 5px;
+    display: none;
   }
 
   .footer h2 {
