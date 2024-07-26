@@ -1,4 +1,5 @@
-import React from "react";
+'use client';
+import React, { useEffect } from "react";
 import './page.css';
 import WebsiteHeader from "@/components/Layout/Website/WebsiteHeader/WebsiteHeader";
 import WebsiteFooter from "@/components/Layout/Website/WebsiteFooter/WebsiteFooter";
@@ -8,7 +9,7 @@ interface Props {
 
 }
 
-export default async function Page(props: Props) {
+export default function Page(props: Props) {
     return (
         <div className="app">
             <WebsiteHeader />

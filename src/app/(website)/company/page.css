@@ -464,8 +464,7 @@ body {
 @media screen and (max-width: 700px) {
 
   .intro {
-    margin-top: 100px;
-    /* padding-bottom: 25vh; */
+    margin-top: 40px;
   }
   .intro h1 {
     font-size: 50px;
@@ -641,7 +640,7 @@ body {
   }
 
   .intro {
-    margin-top: 100px;
+    margin-top: 30px;
   }
   .intro h1 {
     font-size: 30px;
