@@ -7,7 +7,14 @@
     padding: 20px 10px 15px 10px;
     background-color: #0B102D;
 }
-  
+
+.hiddenLg {
+  display: none;
+}
+
+.appLogo {
+  width: 159px;
+}
 
 .header button {
   background-color: #6DE96D;
@@ -18,12 +25,128 @@
 }
 
 
+.links {
+  font-family: "Archivo", sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.links a {
+  margin-right: 24px;
+}
+
+.mobileNavContainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 5rem;
+  padding: 5px;
+  padding-top: 0px;
+  /* background-color: rgba(10, 10, 10, .4); */
+  /* background-color: rgba(11, 16, 45, .4); */
+  /* width: 90%; */
+  /* align-self: center; */
+  background-color: #0B102D;
+  display: flex;
+  flex-direction: column;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(255 255 255 / 0.2);
+}
+
+.navList {
+  display: grid;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  align-self: center;
+}
+
+.navListItem {
+  padding: 0.08rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: rgba(200,200,200);
+}
+
+.navListItem:hover {
+  background-color: #0B102D;
+}
+.navListItem:hover a {
+  color: rgba(255,255,255, .5);
+}
+
+.navLink {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.navLink:visited, .links {
+  color: white;
+}
+
+.navLink:link, .links *{
+  color: white;
+}
+
+.links * {
+  text-decoration: none;
+}
+
+.navLinkText {
+  font-size: 1em;
+  gap: 0.25rem;
+  display: flex;
+  font-family: "Archivo", 'sans-serif';
+
+}
+.navIcon {
+  overflow: visible;
+  box-sizing: content-box;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+@media screen and (max-width: 650px) {
+  .hiddenLg {
+    display: block;
+  }
+
+  .downloadBtn {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+}
+
+
 @media screen and (max-width: 700px) {
+  .appLogo {
+    width: 100px;
+  }
+
   .header button {
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
     font-size: 12px;
   }
+
+  .links a {
+    margin-right: 10px;
+    font-size: 13px;
+    letter-spacing: .5px;
+  }
+
 }
 
 
@@ -31,5 +154,9 @@
 
   .header button {
     font-size: 10px;
+  }
+
+  .appLogo {
+    width: 80px;
   }
 }

@@ -15,49 +15,50 @@ export default async function Page(props: Props) {
 
             <div className='intro'>
                 <h1>
-                    Your Instant
+                    Welcome to a New Era
                 </h1>
                 <h1>
-                    Virtual Dollar Card
+                    of Online Payments
                 </h1>
-                <p>Click, Pay, Explore. It's that Easy. Go global with Yobaa.</p>
-                <div className='store-links'>
-                    <img src="/assets/img/appstore-download.png" />
-                    <img src="/assets/img/playstore-download.png" style={{ marginLeft: 10 }} />
-                </div>
+                <p>We are empowering users to shop online with</p>
+                <p>confidence and receive payments instantly</p>
+
                 <div
                     className="row images-container" >
-                    <div className="left-image-container">
-                        <img src='/assets/img/students.png'
-                            className="left-image" />
-                    </div>
-                    <div className="right-image-container">
-                        <img src='/assets/img/student.png'
-                            className="right-image" />
+                    <div className="top-image-container">
+                        <img src='/assets/img/about-us-image.png'
+                            className="top-image" />
                     </div>
                 </div>
             </div>
-            <div className='functions-container'>
+            <div className='about-container'>
                 <h2>
-                    Discover the Yoba Advantage
+                    The Yoba Story
                 </h2>
-                <p>Click, Pay, Explore. It's that Easy. Go global with Yobaa.</p>
-                <div className='yoba-box-container'>
-                    <div className='yoba-box1'>
-                        <img src='/assets/img/yoba-stacked-cards.png' className="stacked-images" />
-                        <p className='yoba-box-text'>Shop globally from anywhere, access international brands and subscriptions easily</p>
+                <p className="click-and-pay-text">Click, Pay, Explore. It's that Easy. Go global with Yobaa.</p>
+                <div className='about-us-container'>
+                    <div className="about-us-story-container">
+                        <h3>
+                            Innovation Fueled By Frustration
+                        </h3>
+                        <p>
+                            As a Nigerian digital creator, I know all too well the challenges of receiving payments from clients or trying to purchase products and services on international websites. The frustration of finding the perfect item online only to see a "Card Declined" message at checkout can be disheartening.
+                        </p>
+                        <p>
+                            That's where Yobaa comes in. At Yobaa, we are committed to empowering our customers and bridging the gap, enabling you to fully participate in the global financial sphere. Whether it's seamless cross-border transactions or reliable virtual USD cards, Yobaa is here to ensure that your financial interactions are smooth and hassle-free.
+                        </p>
                     </div>
-                    <div className='yoba-box2'>
-                        <img src='/assets/img/payment-link-sent.png' className="payment-link-image" />
-                        <p className='yoba-box-text'>Control your card, track spending, and manage funds on the go</p>
-                    </div>
-                    <div className='yoba-inner-box-container'>
-                        <div className='yoba-box3'>
-                            <img src='/assets/img/round-zero-percent.png' className="zero-image" />
-                            <p className='yoba-box-text'>Zero conversion or maintenance fees</p>
-                        </div>
-                        <div className='yoba-box4'>
-                            <p className='yoba-box-text'>Download the app</p>
+
+                    <div className="erik-image-container">
+                        <img src='/assets/img/eric-okafor.png'
+                            className="erik-image" />
+                        <div className="profile-info">
+                            <p>
+                                Eric Okafor
+                            </p>
+                            <p>
+                                Co-Founder, Yobaa
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -164,6 +165,7 @@ export default async function Page(props: Props) {
                     <p>Click, Pay, Explore. It's that Easy. Go global with Yobaa.</p>
                 </div>
 
+               
                 <FAQItem
                     question="What currencies does Yoba support?"
                     answer="USD and Naira"
@@ -176,6 +178,7 @@ export default async function Page(props: Props) {
                     question="How do i add funds to my Yoba account?"
                     answer={`Simply login to your Yobaa account and click on "Fund Wallet"`}
                 />
+
                 <div className='more-questions'>
                     <h3>Still have more questions?</h3>
                     <p>Can’t find the answer you’re looking for? Please send a message to our friendly team help@yooba.ai</p>
