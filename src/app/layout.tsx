@@ -1,4 +1,4 @@
-import '@/styles/globals.scss'
+// import '@/styles/globals.scss'
 // Next.js allows you to import CSS directly in .js files.
 // It handles optimization and all the necessary Webpack configuration to make this work.
 import { config } from '@fortawesome/fontawesome-svg-core'
