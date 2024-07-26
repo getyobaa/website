@@ -10,13 +10,14 @@ interface FAQItemProps {
 const FAQItem = (props: FAQItemProps) => {
     const [open, setOpen] = useState(false);
     return (
-        <div className={`${styles.question} ${open ? styles.open : ''}`}>
+        <div 
+        onClick={() => {
+            setOpen(!open);
+        }}
+        className={`${styles.question} ${open ? styles.open : ''}`}>
             <div className={styles.top}>
                 <div>{props.question}</div>
                 <img 
-                onClick={() => {
-                    setOpen(!open);
-                }}
                 src="/assets/svg/arrow-down.svg" className={`${styles.arrowDown} ${open ? styles.rotate : ''}`} alt="arrow-down" />
             </div>
 
