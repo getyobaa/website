@@ -33,7 +33,7 @@ export default async function Page(props: Props) {
                     </div>
                     <div className="right-image-container">
                         <img src='/assets/img/student.png'
-                            className="right-image" />
+                            className="right-image safari-image" />
                     </div>
                 </div>
             </div>

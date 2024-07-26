@@ -461,6 +461,14 @@ body {
   overflow: visible;
 }
 
+/* Safari only */
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  .zero-image {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
 .left-image-container {
   height: 535px;
   width: 50%;

@@ -39,3 +39,20 @@
     font-family: "ClashDisplay-Regular", 'sans-serif';
     margin-top: 20px;
 }
+
+@media screen and (max-width: 700px) {
+    .question {
+        width: 72%;
+        /* padding: 10px 20px; */
+    }
+}
+
+
+
+@supports (-webkit-backdrop-filter: blur(1px)) {
+    .question div {
+        font-weight: 400;
+        font-size: 18px;
+
+    }
+}

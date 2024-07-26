@@ -27,7 +27,7 @@ export default async function Page(props: Props) {
                     className="row images-container" >
                     <div className="top-image-container">
                         <img src='/assets/img/about-us-image.png'
-                            className="top-image" />
+                            className="top-image safari-image" />
                     </div>
                 </div>
             </div>
