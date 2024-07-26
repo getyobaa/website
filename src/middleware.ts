@@ -22,23 +22,23 @@ export default async function middleware(request: NextRequest, event: NextFetchE
    * - login
    * - register
    */
-  if (![
-    '/login',
-    '/register',
-    '/'
-  ].includes(request.nextUrl.pathname)) {
-    const res: NextMiddlewareResult = await withAuth(
-      // Response with local cookies
-      () => response,
-      {
-      // Matches the pages config in `[...nextauth]`
-        pages: {
-          signIn: '/login',
-        },
-      },
-    )(request as NextRequestWithAuth, event)
-    return res
-  }
+  // if (![
+  //   '/login',
+  //   '/register',
+  //   '/'
+  // ].includes(request.nextUrl.pathname)) {
+  //   const res: NextMiddlewareResult = await withAuth(
+  //     // Response with local cookies
+  //     () => response,
+  //     {
+  //       // Matches the pages config in `[...nextauth]`
+  //       pages: {
+  //         signIn: '/login',
+  //       },
+  //     },
+  //   )(request as NextRequestWithAuth, event)
+  //   return res
+  // }
 
   return response
 }
