@@ -74,21 +74,21 @@
   @media screen and (max-width: 450px) {
     .safari-image {
       object-fit: contain !important;
-      transform: scale(3.8);
+      transform: scale(4);
     }
   }
 
   @media screen and ((max-width: 420px) or (max-width: 400px)) {
     .safari-image {
       object-fit: contain !important;
-      transform: scale(4.2);
+      transform: scale(4.3);
     }
   }
 
   @media screen and ((max-width: 380px) or (max-width: 350px)) {
     .safari-image {
       object-fit: contain !important;
-      transform: scale(5);
+      transform: scale(4.7);
     }
   }
 
