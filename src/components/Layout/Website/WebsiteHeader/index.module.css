@@ -42,10 +42,7 @@
   top: 5rem;
   padding: 5px;
   padding-top: 0px;
-  /* background-color: rgba(10, 10, 10, .4); */
-  /* background-color: rgba(11, 16, 45, .4); */
-  /* width: 90%; */
-  /* align-self: center; */
+  z-index: 2;
   background-color: #0B102D;
   display: flex;
   flex-direction: column;

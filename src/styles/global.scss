@@ -78,28 +78,28 @@
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and ((max-width: 420px) or (max-width: 400px)) {
     .safari-image {
       object-fit: contain !important;
       transform: scale(4.2);
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and ((max-width: 380px) or (max-width: 350px)) {
     .safari-image {
       object-fit: contain !important;
       transform: scale(5);
     }
   }
 
-  @media screen and (max-width: 300px) {
+  @media screen and ((max-width: 300px) or (max-width: 280px) ) {
     .safari-image {
       object-fit: contain !important;
       transform: scale(5.8);
     }
   }
 
-  @media screen and (max-width: 250px) {
+  @media screen and ((max-width: 250px) or (max-width: 200px)) {
     .safari-image {
       object-fit: contain !important;
       transform: scale(7.1);
