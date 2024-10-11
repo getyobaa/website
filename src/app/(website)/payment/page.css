@@ -1,0 +1,322 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1; */
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
+.app {
+  background-color: white;
+  width: 50vw;
+  /* height: 650px; */
+  display: flex;
+  /* flex-direction: column; */
+  padding: 8px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: rgba(244, 245, 245, 1);
+  box-shadow: -10px -10px 10px 5px rgba(126, 145, 126, 0.07), 10px 10px 10px 5px rgba(126, 145, 126, 0.07);
+  
+}
+
+.app-logo {
+  align-self: center;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.app-logo-header {
+  height: 20px;
+  margin-left: 20px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.currency-details, .payment-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+h2.title {
+  font-family: "ClashDisplay-Medium", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: .8px;
+  align-self: center;
+  width: 65%;
+}
+
+div.desc {
+  font-family: "Archivo", sans-serif;
+  letter-spacing: .6px;
+  line-height: 22.5px;
+  text-align: center;
+  font-size: 16px;
+  color: rgba(112, 116, 126, 1);
+  align-self: center;
+  width: 65%;
+}
+
+.amount-title {
+  font-family: "ClashDisplay-Medium", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: .8px;
+  align-self: center;
+  width: 65%;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.amount-desc-text {
+  font-family: "Archivo", sans-serif;
+  letter-spacing: .6px;
+  line-height: 22.5px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(112, 116, 126, 1);
+  align-self: center;
+  margin-top: 30px;
+}
+
+.payment-status-text {
+  font-family: "Archivo", sans-serif;
+  letter-spacing: .6px;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  align-self: center;
+  margin-top: 10px;
+}
+.check-icon-container {
+  align-self: center;
+  margin-top: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(109, 233, 109, 1);
+}
+
+.check-icon {
+  font-size: 16px;
+  color: white;
+}
+
+.amount-container {
+  width: 55%;
+  height: 85px;
+  border-radius: 14px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 12px 10px;
+  border-color: rgba(109, 233, 109, 1);
+  background-color: rgba(241, 253, 240, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: center;
+  margin-top: 20px;
+}
+.amount-text {
+  font-family: "Archivo", sans-serif;
+  letter-spacing: .8px;
+  /* text-align: center; */
+  font-size: 15px;
+  color: rgba(112, 116, 126, 1);
+}
+.amount-value {
+  font-family: "ClashDisplay-SemiBold", sans-serif;
+  letter-spacing: 1px;
+  /* text-align: center; */
+  font-size: 25px;
+  color: black
+}
+
+
+.select-container {
+  margin-top: 30px;
+  width: 58%;
+  /* background-color: red; */
+  align-self: center;
+}
+
+.currency-select {
+  width: 90%;
+  background: url(/assets/img/arrow-down.png) no-repeat 96% 50%;
+  background-size: 10px 6px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 10px;
+  appearance: none;
+  outline-width: 0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: rgba(102, 108, 127, 1);
+  width: 100%;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+.input-title {
+  font-family: "Archivo", sans-serif;
+  letter-spacing: .8px;
+  font-size: 15px;
+}
+
+.button {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(26, 173, 26, 1);
+  background-color: rgba(109, 233, 109, 1);
+  padding: 16px;
+  width: 60%;
+  align-self: center;
+  margin-top: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button div {
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  letter-spacing: .8px;
+  font-size: 15px;
+}
+
+.payment-info-container {
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(228, 229, 231, 1);
+  background-color: rgba(250, 250, 254, 1);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 60%;
+  align-self: center;
+}
+
+.summary-info-container {
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 60%;
+  align-self: center;
+}
+
+.info-row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-head {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: rgba(2, 28, 2, 1);
+}
+
+.info-value {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(2, 28, 2, 1);
+  margin-top: 10px;
+}
+
+.info-right {
+  cursor: pointer;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.divider-line {
+  border-bottom: 1px solid rgba(228, 229, 231, 1);
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .app {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .app {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  h2.title {
+    font-size: 20px;
+    /* background-color: red; */
+    width: 80%;
+  }
+
+  div.desc {
+    font-size: 14px;
+    /* background-color: blue; */
+    width: 80%;
+  }
+  .amount-container {
+    width: 70%;
+  }
+
+  .select-container {
+    width: 75%;
+  }
+
+  .button {
+    width: 65%;
+  }
+
+  .summary-info-container {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .app-logo-header {
+    display: block;
+  }
+  .app-logo {
+    display: none;
+  }
+}
