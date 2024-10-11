@@ -303,13 +303,16 @@ input:focus {
   }
 
   .button {
-    width: 65%;
+    width: 70%;
   }
 
   .summary-info-container {
     width: 80%;
   }
 
+ .payment-info-container {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 500px) {
