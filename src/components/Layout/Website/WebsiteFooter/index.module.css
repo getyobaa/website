@@ -5,6 +5,8 @@
   align-items: center;
   padding-top: 50px;
   padding-bottom: 10px;
+  background-color: #0B102D;
+  color: white;
 }
 
 .footer h2 {
@@ -85,6 +87,23 @@
   width: 45%;
 }
 
+
+.pink-bg{
+  background-color: #C935D2;
+}
+
+.yellow-bg {
+  background-color: #F7EBA1;
+}
+
+.purple-bg2 {
+  background-color: #8C50EC;
+}
+
+.orange-bg {
+  background-color: #FC8D8A;
+}
+
 @media screen and (max-width: 885px) {
   .appLogoFooter {
     width: 140px;
@@ -143,5 +162,6 @@
     display: none;
   }
 }
+
 
 
