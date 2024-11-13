@@ -1,0 +1,10 @@
+.mainContainer {
+    --header2-primary-color: #22C621;
+    --primary-color: #069905;
+    background-color: white;
+}
+
+.content {
+    padding: 20px 20px;
+}
+
