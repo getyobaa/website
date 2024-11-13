@@ -78,7 +78,7 @@ export default function Page() {
                 </p>
 
                 <h5>
-                    1.4 Information from Third-Party Sources
+                    1.4 Information from Third-Party Sources 
                 </h5>
                 <p>Additional information may be collected from:</p>
                 <ul>
