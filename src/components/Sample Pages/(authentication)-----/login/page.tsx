@@ -1,6 +1,6 @@
 import { Col, Row } from 'react-bootstrap'
 import Link from 'next/link'
-import LoginForm from '@/app/(authentication)/login/login'
+// import LoginForm from '@/app/(authentication)/login/login'
 import { SearchParams } from '@/types/next'
 import { getDictionary } from '@/locales/dictionary'
 
@@ -25,7 +25,7 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
               <h1>{dict.login.title}</h1>
               <p className="text-black-50 dark:text-gray-500">{dict.login.description}</p>
 
-              <LoginForm callbackUrl={getCallbackUrl()} />
+              {/* <LoginForm callbackUrl={getCallbackUrl()} /> */}
             </div>
           </Col>
           <Col
